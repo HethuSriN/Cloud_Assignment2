@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Retrieved</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Centered container for content */
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+	    background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for user info display */
+        .user-info {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #333;
+            text-align: left;
+        }
+        /* Styling for buttons */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+         .user-info {
+                font-size: 1rem;
+            }
+
+            a {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Information Retrieved Successfully!</h1>
+        <p>Here are the details for user <strong>{{user[1]}}</strong>:</p>
+        <div class="user-info">
+            <p><strong>Username:</strong> {{user[1]}}</p>
+            <p><strong>First Name:</strong> {{user[2]}}</p>
+            <p><strong>Last Name:</strong> {{user[4]}}</p>
+            <p><strong>Email:</strong> {{user[3]}}</p>
+        </div>
+        <a href="/">Go to Home</a>
+    </div>
+</body>
+</html>
